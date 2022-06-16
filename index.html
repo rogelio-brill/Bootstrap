@@ -15,9 +15,9 @@
 <body>
     <div class="container">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
-                <nav class="navbar bg-light">
+                <nav class="navbar">
                     <div class="container">
                       <a class="navbar-brand" href="#">
                         <img src="images/logo-dans-meat-yogurt.svg" alt="Meat Yougrt logo" />
@@ -28,27 +28,24 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                <ul class="navbar-nav ms-auto float-end">
+                  
+                  <li class="nav-item dropdown btn btn-outline-light me-4" style="width: 120px;">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Flavors
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Ham</a></li>
+                      <li><a class="dropdown-item" href="#">Beef</a></li>
+                      <li><a class="dropdown-item" href="#">Chicken</a></li>
+                      <li><a class="dropdown-item" href="#">Turkey</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+
+                  <li class="nav-item btn btn-outline-light" style="width: 120px;">
+                    <a class="nav-link text-white" href="#">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -72,9 +69,23 @@
             </div>
         </div>
 
+        <!-- Founder's message -->
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="images/headshot-dan.jpg" class="img-fluid border rounded-start border-lg border-0" alt="Meat Yogurt Founder" />
+          </div>
+          <div class="col-12 col-md-8 bg-white p-5 d-flex align-items-center border border-dark rounded-end border-lg">
+            <section>
+              <h2>Mesage from our founder</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptate amet nisi et! Nostrum autem voluptate at enim similique architecto dignissimos hic iure culpa accusantium natus ea corporis, fugit excepturi deserunt incidunt placeat fuga, consequatur distinctio quos debitis qui eligendi voluptates recusandae. Dolorem iure adipisci animi eveniet beatae eum velit, reiciendis voluptatibus officiis quidem optio, impedit assumenda cumque exercitationem qui.
+              </p>
+            </section>
+          </div>
+        </div>
+
 
           <!-- Carousel -->
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide d-none d-md-block carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/yogurt-1.png" class="d-block w-100" alt="...">
@@ -97,30 +108,36 @@
           </div>
      
           <!-- Cards -->
-          <div class="card" style="width: 18rem;">
-            <img src="images/product1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="row row-cols-1 row-cols-md-3 g-4 my-5 me-0">
+            <div class="col">
+              <div class="card shadow" style="width: 18rem;">
+                <img src="images/product1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="images/product2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col">
+              <div class="card shadow" style="width: 18rem;">
+                <img src="images/product2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="images/product3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col">
+              <div class="card shadow" style="width: 18rem;">
+                <img src="images/product3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
+              </div>
             </div>
           </div>
 
